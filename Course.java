@@ -13,13 +13,15 @@ public class Course {
     private String courseName;
     private ArrayList<Integer> courseGrades;
 
-    //default constructor
+    //default constructor: used to set name and initialize ArrayList
+
     public Course(String courseName) {
         this.courseName = courseName;
         this.courseGrades = new ArrayList<>();
     }
 
     //all setters and getters
+
     public String getCourseName() {  
         return courseName;              //getter
     }
@@ -36,7 +38,7 @@ public class Course {
         this.courseGrades = courseGrades;       //setter
     }
 
-    //tostring method
+    //toString method
     @Override
     public String toString() {        
         return "Course{" +
